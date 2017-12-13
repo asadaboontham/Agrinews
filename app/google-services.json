@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "147660430417",
+    "firebase_url": "https://agrinewsw.firebaseio.com",
+    "project_id": "agrinewsw",
+    "storage_bucket": "agrinewsw.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147660430417:android:cc40b39ceaaed06e",
+        "android_client_info": {
+          "package_name": "com.example.asadaboomtham.agrinewsw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "147660430417-lcnie997kru4vkfubjhjefafdo2rtmli.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asadaboomtham.agrinewsw",
+            "certificate_hash": "58d69ef57f6b8727a8ae9e26de1292eaf09b0cdf"
+          }
+        },
+        {
+          "client_id": "147660430417-sakecc65rnb6q1sbk86brupg95r93lf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6wfeUr95j0UGMDv2CnO3XHfxE7LrqFlA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "147660430417-sakecc65rnb6q1sbk86brupg95r93lf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
