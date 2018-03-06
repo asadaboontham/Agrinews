@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         weatherIcon = (TextView) findViewById(R.id.weather_icon);
         weatherIcon.setTypeface(weatherFont);
 
-
 //        Function.placeIdTask asyncTask =new Function.placeIdTask(new Function.AsyncResponse() {
 //            public void processFinish(String weather_city, String weather_description, String weather_temperature, String weather_humidity, String weather_pressure, String weather_updatedOn, String weather_iconText, String sun_rise) {
 //
@@ -84,9 +83,8 @@ public class MainActivity extends AppCompatActivity {
 //        });
 //        asyncTask.execute("25.180000", "89.530000"); //  asyncTask.execute("Latitude", "Longitude")
 
-
-
     }
+
     private View.OnClickListener OnClickListener2 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {

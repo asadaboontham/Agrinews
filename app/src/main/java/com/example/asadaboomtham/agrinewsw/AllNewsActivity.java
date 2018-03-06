@@ -31,7 +31,7 @@ import java.util.ArrayList;
 
 public class AllNewsActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
-    private static final String URL_DATA = "https://9249bb05.ngrok.io/reddit/test.php";
+    private static final String URL_DATA = "https://e2d5eaf7.ngrok.io/reddit/test.php";
     private RecyclerView recyclerView;
     //private RecyclerView.Adapter adapter;
     // private List<ListItem> listItems; //mArray
@@ -71,7 +71,7 @@ public class AllNewsActivity extends AppCompatActivity implements SwipeRefreshLa
                                     }
                                 }
         );
-
+        //getSupportActionBar().hide();
     }
 
     /**

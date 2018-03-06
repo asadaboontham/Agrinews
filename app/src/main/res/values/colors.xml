@@ -13,4 +13,7 @@
         <item>#24c6d5</item>
     </string-array>
 
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorAlmostWhite">#CCCCCC</color>
+
 </resources>

@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">AgriNews</string>
+    <string name="app_name"></string>
+
+    <!--Facebook Session-->
+    <string name="facebook_app_id">1674031322655681</string>
+    <string name="fb_login_protocol_scheme">fb1674031322655681</string>
+
+    <string name="welcome">welcome</string>
+    <string name="cancel_login">cancel_login</string>
+    <string name="error_login">Erro login</string>
+    <string name="logout">logout</string>
+    <!--Facebook Session-->
+
+
 </resources>

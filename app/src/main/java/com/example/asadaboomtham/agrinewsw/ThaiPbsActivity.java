@@ -29,7 +29,7 @@ import java.util.ArrayList;
 
 public class ThaiPbsActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
-    private static final String URL_DATA = "https://9249bb05.ngrok.io/reddit/ThaiPbs_data.php";
+    private static final String URL_DATA = "http://e2d5eaf7.ngrok.io/reddit/ThaiPbs_data.php";
     private RecyclerView recyclerView;
     //private RecyclerView.Adapter adapter;
     // private List<ListItem> listItems; //mArray

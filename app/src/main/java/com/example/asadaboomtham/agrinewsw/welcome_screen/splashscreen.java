@@ -10,8 +10,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.example.asadaboomtham.agrinewsw.Adapter.Main2Activity;
-import com.example.asadaboomtham.agrinewsw.MainActivity;
+import com.example.asadaboomtham.agrinewsw.Main2Activity;
+import com.example.asadaboomtham.agrinewsw.OnboardActivity;
 import com.example.asadaboomtham.agrinewsw.R;
 //import com.example.asadaboomtham.agrinewsw.welcome_screen.splashscreen;
 
@@ -53,7 +53,7 @@ public class splashscreen extends Activity {
                         waited += 100;
                     }
                     Intent intent = new Intent(splashscreen.this,
-                            Main2Activity.class);
+                            OnboardActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(intent);
                     splashscreen.this.finish();

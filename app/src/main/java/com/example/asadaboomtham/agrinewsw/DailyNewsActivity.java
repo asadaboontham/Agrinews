@@ -29,7 +29,7 @@ import java.util.ArrayList;
 
 public class DailyNewsActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
-    private static final String URL_DATA = "https://9249bb05.ngrok.io/reddit/dailynews_data.php";
+    private static final String URL_DATA = "http://e2d5eaf7.ngrok.io/reddit/dailynews_data.php";
     private RecyclerView recyclerView;
     //private RecyclerView.Adapter adapter;
     // private List<ListItem> listItems; //mArray
@@ -128,6 +128,9 @@ public class DailyNewsActivity extends AppCompatActivity implements SwipeRefresh
                     public void onErrorResponse(VolleyError volleyError) {
                         progressDialog.dismiss();
                         Toast.makeText(getApplicationContext(), volleyError.getMessage(), Toast.LENGTH_LONG).show();
+
+//                        Toast.makeText(getApplicationContext(), "This is my Toast message!", Toast.LENGTH_LONG).show();
+
 
                     }
                 });
