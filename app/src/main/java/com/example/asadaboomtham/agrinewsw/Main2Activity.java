@@ -3,11 +3,16 @@ package com.example.asadaboomtham.agrinewsw;
  * Created by SHAJIB on 7/4/2017.
  */
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
+import android.util.Base64;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -30,11 +35,14 @@ import com.facebook.login.LoginManager;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class Main2Activity extends AppCompatActivity {
 
-    private final String TAG = "MainActivity";
+    private final String TAG = "Main2Activity";
 
     private CircleImageView photoImageView;
     private TextView nameTextView;
@@ -47,7 +55,7 @@ public class Main2Activity extends AppCompatActivity {
     private LinearLayout linearLayout_Kaokaset;
     private LinearLayout linearLayout_Thaipbs;
     private LinearLayout linearLayout_Dailynews;
-//    private LinearLayout facebook_connect_layout;
+    private LinearLayout facebook_connect_layout;
 
 
     TextView customFontTextView;
@@ -64,6 +72,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
+
 
         photoImageView = (CircleImageView) findViewById(R.id.photoImageView);
         nameTextView = (TextView) findViewById(R.id.nameTextView);
@@ -110,8 +119,8 @@ public class Main2Activity extends AppCompatActivity {
         linearLayout_facebook = (LinearLayout) findViewById(R.id.linearLayout_facebook);
         linearLayout_facebook.setOnClickListener(OnClickListener2);
 //
-//        facebook_connect_layout = (LinearLayout) findViewById(R.id.facebook_connect_layout);
-//        facebook_connect_layout.setOnClickListener(OnClickListener6);
+        facebook_connect_layout = (LinearLayout) findViewById(R.id.facebook_connect_layout);
+        facebook_connect_layout.setOnClickListener(OnClickListener6);
 
         linearLayout_AllNews = (LinearLayout) findViewById(R.id.linearLayout_AllNews);
         linearLayout_AllNews.setOnClickListener(OnClickListener);
@@ -197,14 +206,14 @@ public class Main2Activity extends AppCompatActivity {
             startActivity(i);
         }
     };
-//    private View.OnClickListener OnClickListener6 = new View.OnClickListener() {
-//        @Override
-//        public void onClick(View view) {
-//            Intent i = new Intent(getApplicationContext(), LoginActivity
-//                    .class);
-//            startActivity(i);
-//        }
-//    };
+    private View.OnClickListener OnClickListener6 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent i = new Intent(getApplicationContext(), LogoutActivity
+                    .class);
+            startActivity(i);
+        }
+    };
 
     private void requestEmail(AccessToken currentAccessToken) {
         GraphRequest request = GraphRequest.newMeRequest(currentAccessToken, new GraphRequest.GraphJSONObjectCallback() {
@@ -227,6 +236,7 @@ public class Main2Activity extends AppCompatActivity {
         request.setParameters(parameters);
         request.executeAsync();
     }
+
 
     private void setEmail(String email) {
         emailTextView.setText(email);
@@ -261,6 +271,38 @@ public class Main2Activity extends AppCompatActivity {
         super.onDestroy();
 
         profileTracker.stopTracking();
+    }
+
+    public static String printKeyHash(Activity context) {
+        PackageInfo packageInfo;
+        String key = null;
+        try {
+            //getting application package name, as defined in manifest
+            String packageName = context.getApplicationContext().getPackageName();
+
+            //Retriving package info
+            packageInfo = context.getPackageManager().getPackageInfo(packageName,
+                    PackageManager.GET_SIGNATURES);
+
+            Log.e("Package Name=", context.getApplicationContext().getPackageName());
+
+            for (android.content.pm.Signature signature : packageInfo.signatures) {
+                MessageDigest md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                key = new String(Base64.encode(md.digest(), 0));
+
+                // String key = new String(Base64.encodeBytes(md.digest()));
+                Log.e("Key Hash=", key);
+            }
+        } catch (PackageManager.NameNotFoundException e1) {
+            Log.e("Name not found", e1.toString());
+        } catch (NoSuchAlgorithmException e) {
+            Log.e("No such an algorithm", e.toString());
+        } catch (Exception e) {
+            Log.e("Exception", e.toString());
+        }
+
+        return key;
     }
 }
 

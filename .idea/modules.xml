@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AgriNewsW.iml" filepath="$PROJECT_DIR$/AgriNewsW.iml" />
+      <module fileurl="file://C:\Users\asada boomtham\Desktop\Agrinews\AgriNewsW.iml" filepath="C:\Users\asada boomtham\Desktop\Agrinews\AgriNewsW.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Agrinews.iml" filepath="$PROJECT_DIR$/.idea/Agrinews.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

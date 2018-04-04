@@ -51,7 +51,7 @@
                         android:id="@+id/photoImageView"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/main_background"
+                        android:src="@drawable/icon_code"
                         android:layout_above="@+id/nameTextView"
                         android:layout_centerHorizontal="true"
                         android:layout_centerInParent="true"

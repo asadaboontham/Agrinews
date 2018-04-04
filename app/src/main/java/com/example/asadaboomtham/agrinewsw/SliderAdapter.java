@@ -23,8 +23,8 @@ public class SliderAdapter extends PagerAdapter {
     }
 
     public int[] slideImages = {
-            R.drawable.ivo,
-            R.drawable.pi,
+            R.drawable.ico,
+            R.drawable.icon_weather,
             R.drawable.icon_code
     };
 
