@@ -29,7 +29,7 @@ import java.util.ArrayList;
 
 public class facebookActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
-    private static final String URL_DATA = "http://e2d5eaf7.ngrok.io/reddit/face_feed.php";
+    private static final String URL_DATA = "http://2bb35621.ngrok.io/reddit/face_feed.php";
     private RecyclerView recyclerView;
     //private RecyclerView.Adapter adapter;
     // private List<ListItem> listItems; //mArray

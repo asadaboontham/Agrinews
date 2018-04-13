@@ -29,7 +29,7 @@ import java.util.ArrayList;
 
 public class DailyNewsActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
-    private static final String URL_DATA = "http://e2d5eaf7.ngrok.io/reddit/dailynews_data.php";
+    private static final String URL_DATA = "https://dc6d8e9c.ngrok.io/reddit/dailynews_data.php";
     private RecyclerView recyclerView;
     //private RecyclerView.Adapter adapter;
     // private List<ListItem> listItems; //mArray

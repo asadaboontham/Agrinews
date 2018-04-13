@@ -25,7 +25,9 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
+    compile 'saschpe.android:customtabs:1.1.1'
+    //noinspection GradleCompatible
+    compile 'com.android.support:customtabs:26.1.0'
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.facebook.android:facebook-share:[4,5)'

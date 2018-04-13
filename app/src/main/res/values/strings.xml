@@ -1,5 +1,5 @@
-<resources>
-    <string name="app_name"></string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">DemoApp</string>
 
     <!--Facebook Session-->
     <string name="facebook_app_id">1674031322655681</string>
@@ -9,7 +9,8 @@
     <string name="cancel_login">cancel_login</string>
     <string name="error_login">Erro login</string>
     <string name="logout">logout</string>
+    <!--<string name="activity_custom_tab_share_website" tools:ignore="DuplicateDefinition">Share</string>-->
+    <string name="activity_custom_tab_share_website">Share website</string>
     <!--Facebook Session-->
-
 
 </resources>

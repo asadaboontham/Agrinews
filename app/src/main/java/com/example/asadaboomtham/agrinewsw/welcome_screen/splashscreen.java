@@ -10,7 +10,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.example.asadaboomtham.agrinewsw.Main2Activity;
 import com.example.asadaboomtham.agrinewsw.OnboardActivity;
 import com.example.asadaboomtham.agrinewsw.R;
 //import com.example.asadaboomtham.agrinewsw.welcome_screen.splashscreen;

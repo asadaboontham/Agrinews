@@ -118,7 +118,7 @@ public class OnboardActivity extends AppCompatActivity implements View.OnClickLi
                 if (buttonNext.getText().toString().equalsIgnoreCase("next")) {
                     mSlideViewPager.setCurrentItem(mCurrentPage + 1);
                 } else {
-                    startActivity(new Intent(OnboardActivity.this, Main2Activity.class));
+                    startActivity(new Intent(OnboardActivity.this, MainActivity.class));
                 }
                 break;
             case R.id.btn_previous:
